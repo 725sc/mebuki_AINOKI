@@ -64,6 +64,7 @@ hr {
 ol,
 ul {
   list-style: none;
+  
 }
 
 blockquote,
@@ -104,25 +105,27 @@ img {
 /* ============================================================ */
 
 body {
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
-    "Meiryo", "verdana", sans-serif;
-  font-weight: lighter;
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+  line-height: 1.75;
+  font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   background-color: #174040;
   color: #fff;
 }
 
+body .mincho {
+  font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, "Noto Serif JP", メイリオ, Meiryo, serif;
+  letter-spacing: 0.08em;
+}
+
 img {
   max-width: 100%;
-}
-
-.pc-block {
-  display: none;
-}
-
-.sp-block {
-  display: block;
 }
 
 a {
@@ -138,26 +141,25 @@ a:hover {
 }
 
 .btn {
+  letter-spacing: 0.08em;
   display: inline-block;
-  max-width: 100%;
-  padding: 15px 60px;
-  border-radius: 100px;
-  text-align: center;
-  position: relative;
-  color: #174040;
-  font-weight: bold;
-  background-color: #fff;
-  font-size: 2rem;
-  border: 1px solid #174040;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 32px;
+  margin: 0;
+  transition: 0.3s;
+  margin: 20px 0;
 }
 
-.btn:hover,
-.btn a:hover {
-  opacity: 1;
+.btn-buy {
   color: #fff;
-  background-color: #174040;
+  border-color: #fff;
+}
+
+.btn-buy:hover {
+  background: #fff;
+  color: #174040;
 }
 
 /* ============================================================ */
@@ -166,13 +168,13 @@ a:hover {
 
 .header {
   background-color: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .logo {
   text-align: center;
 }
 .logo-image {
-  width: 10%;
+  width: 8vw;
 }
 
 /* ============================================================ */
@@ -184,97 +186,98 @@ a:hover {
   width: 100%;
 }
 
+.main-vis-img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
 .main-vis__txt {
   position: absolute;
   color: #fff;
-  font-size: 30px;
-  right: 100px;
-  bottom: 60px;
+  font-size: 3rem;
+  left: 70%;
+  bottom: 20%;
+  line-height: 1.8;
 }
 
 /* ============================================================ */
 /* section1 */
 /* ============================================================ */
-
-.section1 {
-  height: 750px;
-}
-
-.sec1-inner1,
-.sec1-inner2,
-.sec1-inner3 {
-  display: block;
-}
-
 .sec1-inner1 {
-  position: relative;
-  height: 30%;
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
-
-.model1 {
-  width: 17%;
-  position: absolute;
-  position: left;
-  left: 28%;
-}
-
-.sec1-title {
-  font-size: 30px;
-  position: absolute;
-  top: 70%;
-  right: 25%;
-  color: #fff;
+  padding-top: 8%;
+  padding-bottom: 5%;
   text-align: center;
 }
 
-.icon1 {
-  position: absolute;
-  right: 27%;
-  top: 110%;
-  width: 25%;
+.sec1-inner-in {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 2%;
 }
 
-.sec1-inner2 {
-  display: block;
+.model1 {
+  width: 20vw;
+  position: left;
+  left: 30%;,
+  padding-right:20px;
+}
+
+.sec1-title {
+  font-size: 2.5rem;
+  margin-top: 35%;
+  color: #fff;
+}
+
+.icon1 {
+  width: 20vw;
+}
+
+.sec1-inner2,
+.sec1-inner3 {
+  padding: 0 20vw;
+  text-align: center;
 }
 
 .sec1-p1,
 .sec1-p2,
 .sec1-p3 {
-  position: relative;
   margin: 0 auto;
-  font-size: 1.7rem;
-  top: 150px;
-  width: 50%;
-  text-align: left;
+  font-size: 1.8rem;
 }
 
 .sec1-p1 {
-  padding: 10px 20px;
-  margin-top: 80px;
+  padding-bottom: 2%;
+  padding-left: 12%;
+  text-align: left;
 }
 
 .sec1-p2 {
+  width: 80%;
+  left: 30%;
+  margin: 0 auto;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #174040;
-  padding: 20px;
+  padding: 10px 0;
   border-radius: 37px;
   opacity: 1;
   margin-bottom: 10px;
 }
 
 .sec1-p2 p {
+  text-align: left;
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto;
   color: #174040;
-  line-height: 1.3;
+  line-height: 1.7;
 }
 
 .sec1-p3 {
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-left: 33%;
-  font-size: 25px;
+  margin-top: 8vw;
+  text-align: left;
+  display: inline-block;
+  font-size: 2.5rem;
   line-height: 4rem;
 }
 
@@ -283,38 +286,33 @@ a:hover {
 /* ============================================================ */
 
 .section2 h2 {
-  font-size: 40px;
+  font-size: 5rem;
   text-align: center;
-  margin: 280px 0 50px 0;
-}
-
-.sec2-inner {
-  height: 80%;
+  margin: 7vw 0 2vw 0;
 }
 
 /* eyebalmとeyeshadow共通 */
 
 .eyebalm1-inner-l,
 .eyeshadow-inner-l {
-  width: 35%;
-  position: absolute;
+  display: inline-block;
   position: left;
-  left: 28%;
+  text-align: right;
+  width: 50%;
 }
 
 .eyebalm1-inner-r,
 .eyeshadow-inner-r {
-  width: 32%;
-  position: absolute;
   position: right;
+  display: inline-block;
   right: 20%;
   padding-left: 50px;
+  vertical-align: top;
 }
 
 .eyebalm1-inner-r-h3,
 .eyeshadow-inner-r-h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
 .eyebalm-image,
@@ -324,12 +322,11 @@ a:hover {
 
 .title-jp,
 .txt {
-  font-size: 15px;
   margin-top: 1.5rem;
 }
 
 .title-price {
-  font-size: 20px;
+  font-size: 2.5rem;
   margin-top: 1.5rem;
 }
 
@@ -337,15 +334,9 @@ a:hover {
   line-height: 1.7;
 }
 
-.btn {
-  margin: 30px 0;
-}
-
-.btn-txt {
-  font-size: 10px;
-}
-
 /* eyebalm */
+.eyebalm1 {
+}
 
 .eyebalm3 h4,
 .eyeshadow4 h4 {
@@ -354,30 +345,27 @@ a:hover {
   margin-top: 100px;
 }
 
-.seibun {
-  width: 50%;
-  margin-top: 20px;
-}
-
 .eyebalm2 {
-  position: relative;
-  margin-top: 28%;
-  margin-left: 50%;
+  padding: 0 20%;
+  text-align: center;
 }
 
 .eyebalm2 p {
-  margin-left: 20px;
+  margin-left: 1vw;
+  display: inline-block;
 }
 
 .icon2 {
-  position: absolute;
-  width: 42%;
-  left: -45%;
+  display: inline-block;
+  width: 20vw;
+  text-align: center;
+  padding-top: 3vw;
 }
 
 .eyebalm3 {
   margin-top: 5%;
   text-align: center;
+  padding: 0 10%;
 }
 
 /* eyeshadow */
@@ -387,7 +375,11 @@ a:hover {
 }
 
 .eyeshadow2 {
-  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.eyeshadow3 {
+  height: 40vw;
 }
 
 .model2 {
@@ -407,7 +399,7 @@ a:hover {
 .eyeshadow-box1,
 .eyeshadow-box2 {
   width: 70%;
-  height: 300px;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -435,7 +427,7 @@ a:hover {
 }
 
 .box-inner {
-  padding-top: 8%;
+  padding-top: 3%;
 }
 
 .box-title-num {
@@ -491,12 +483,11 @@ a:hover {
 .eyeshadow4,
 .eyeshadow5 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 6vw;
 }
 
-.seibun-image {
-  width: 50%;
-  margin-top: 100px;
+.seibun-image{
+  width: 40vw;
 }
 
 /* ============================================================ */
@@ -539,4 +530,141 @@ footer {
   color: #fff;
   font-size: 24px;
   padding: 10px;
+}
+
+/*swiper*/
+
+.swiper-container {
+  position: relative;
+  width: 100vw;
+  max-height: 800px;
+}
+
+.swiper-container {
+  margin: 5% 0 0;
+  padding-bottom: 72px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  max-width: 840px;
+  width: 88%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.swiper-slide p {
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide p {
+    text-align: left;
+    font-size: 0.7em;
+  }
+  .swiper-slide p br {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  margin: 0 12px;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+  }
+}
+
+.swiper-pagination {
+  bottom: 0;
+  z-index: 3;
+}
+
+.swiper-pagination-bullet:nth-child(1) {
+  background: #ddb595;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+  background: #e39427;
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+  background: #6e6846;
+}
+
+.swiper-pagination-bullet:nth-child(4) {
+  background: #d16b62;
+}
+
+.swiper-pagination-bullet:nth-child(5) {
+  background: #8d4d39;
+}
+
+/*成分表*/
+.seibun {
+  margin: 2% auto;
+  padding: 0 6%;
+  max-width: 840px;
+}
+
+.seibun::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+
+.seibun h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.8em;
+  line-height: 1.5;
+}
+
+.seibun h3 small {
+  font-size: 0.6em;
+  vertical-align: text-top;
+}
+
+.seibun ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #16403f;
+  font-size: 1.4rem;
+}
+
+.seibun li {
+  width: 19%;
+  background: #e7ebeb;
+  padding: 1% 0.5%;
+  margin: 0.5%;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .seibun li {
+    width: 31.3333%;
+  }
+}
+
+.seibun li small {
+  font-size: inherit;
+  display: inline-block;
+  margin: 0 -0.25em;
+  transform: scale(0.9);
+}
+
+.seibun li {
+  background: #fff;
 }
