@@ -661,7 +661,7 @@ a:hover {
 .sec3-p2 {
   position: absolute;
   left: 10%;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.7;
 }
 
@@ -703,14 +703,25 @@ footer {
   display: block;
 }
 
+/*header*/
+.header {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+.logo-image {
+  width: 15vw;
+}
+
 /*main-vis*/
 .main-vis-img {
   height: 500px;
 }
 
-.main-vis__txt{
-  font-size: 2rem;
-  left: 50%;
+.main-vis__txt {
+  font-size: 1.6rem;
+  left: 60%;
+  top: 67%;
 }
 
 
@@ -722,33 +733,41 @@ height: 400px;
 object-fit: cover;
 }
 
-  .sec1-title {
-    margin-top: 5%;
-  }
+.sec1-title {
+  margin-top: 5%;
+  font-size: 2rem;
+}
 
-  .icon1 {
-    width: 80vw;
+.icon1 {
+  width: 60vw;
 }
 
 .sec1-inner2, .sec1-inner3 {
   padding: 0 3vw;
 }
 
-.sec1-p1{
-  padding-left: 2%;
+.sec1-inner-in {
+  padding-left: 0%;
+}
+
+.sec1-p1, .sec1-p3 {
+  padding: 0% 6% 0 7%;
 }
 
 .sec1-p2 {
-  width: 100%;
+  width: 90%;
 
 }
 
-.sec1-p3{
-  font-size: 1.6rem;
+.sec1-p1, .sec1-p2, .sec1-p3{
+  font-size: 1.4rem;
 }
 
-.sec1-p2 p {
-  font-size: 1.5rem;;
+
+/*section2*/
+
+.section2 h2 {
+  font-size: 3.5rem;
 }
 
 /*eyebalm*/
@@ -760,7 +779,7 @@ object-fit: cover;
 }
 
 .eyebalm1-inner-r {
-  padding-left: 20%;
+  padding-left: 22%;
   text-align: center;
 }
 
@@ -780,6 +799,7 @@ object-fit: cover;
 .title-jp {
   font-size: 1.4rem;
   margin-top: 0.3rem;
+  line-height: 2rem;
 }
 
 .title-price{
@@ -805,6 +825,7 @@ object-fit: cover;
 .icon2{
   width: 50vw;
   margin-top: 10px;
+  margin-left: -5%;
 }
 
 .seibun h3 {
@@ -812,7 +833,11 @@ object-fit: cover;
 }
 
 .seibun{
-  margin: 15% auto;
+  margin: 10% auto 15%;
+}
+
+.seibun ul {
+  font-size: 1.2rem;
 }
 
 .eyebalm3{
@@ -890,31 +915,32 @@ object-fit: cover;
 }
 
 /*swiper*/
-.eyeshadow3 .swiper-slide{
-  width: 50%;
+.swiper2 .swiper-slide{
+  width: 100%;
 }
 
 
-.eyeshadow3 .swiper-container{
+.swiper2{
   background-color: #fff;
-  padding-bottom: 52px;
+  padding-bottom: 28px;
 }
 
-.eyeshadow3 .swiper-slide-inner{
+.swiper2 .swiper-wrapper{
+  width: 100vw;
+}
+
+.swiper2 .swiper-slide-inner{
   margin: 0 auto;
   text-align: center;
 }
 
-.eyeshadow3 .swiper-wrapper{
-  width: 120%;
-}
 
-.eyeshadow3 .swiper-slide p {
+.swiper2 .swiper-slide p {
   display: inline-block;
   text-align: left;
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #174040;
-  margin-top: 0rem;
+  margin-top: -3.8rem;
 }
 
 .swiper-pagination-bullet {
@@ -923,13 +949,36 @@ object-fit: cover;
   margin: 0 8px;
 }
 
+.seibun-image {
+  width: 80vw;
+}
 
+/*section3*/
 
+.section3-back {
+  margin-top: 50px;
+}
 
+.sec3-p1, .sec3-p2 {
+  font-size: 1.5rem;
+  padding: 0 5%;
+  left: 0%;
+}
+
+.sec3-p1 {
+  top: 25%;
+}
+
+.sec3-p2 {
+  top: 65%;
+}
 
 .footer{
   font-size: 16px;
 }
 
+footer{
+  padding: 15px 0;
+}
 
 }
