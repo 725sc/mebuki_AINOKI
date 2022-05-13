@@ -53,7 +53,7 @@
         <img
           src="image/main_vis.jpg"
           alt="mebuki AINOKI"
-          class="main-vis-img pc-block"
+          class="main-vis-img"
         />
 
         <h1 class="main-vis__txt mincho">
@@ -178,7 +178,9 @@
           </div>
         </div>
         <div class="eyeshadow2">
-          <div class="swiper-container sl">
+          <!-- 1個目のSwiper START -->
+          <!-- Swiper START -->
+          <div class="swiper-container sl swiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="image/slide01.jpg" />
@@ -196,9 +198,59 @@
                 <img src="image/slide05.jpg" />
               </div>
             </div>
-
             <div class="swiper-pagination"></div>
           </div>
+          <!-- Swiper END -->
+          <!-- 1個目のSwiper END -->
+
+          <!-- 2個目のSwiper START -->
+          <!-- Swiper START -->
+          <div class="swiper-container sl sp-block swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/eyeshadow1.png" />
+                <div class="swiper-slide-inner">
+                  <p>
+                    01<br />木漏れ日<br />Komorebi<br />まぶたにツヤと輝きを。<br />ベースカラーやハイライトにも。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/eyeshadow2.png" />
+                <div class="swiper-slide-inner">
+                  <p>
+                    02<br />朧月<br />Oboroduki<br />瞳、引き立つソフトイエロー。<br />マットな質感でアクセントにも。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/eyeshadow3.png" />
+                <div class="swiper-slide-inner">
+                  <p>
+                    03<br />若草<br />Wakakusa<br />肌になじむくすみグリーン。<br />重ねづけで表情自在に。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/eyeshadow4.png" />
+                <div class="swiper-slide-inner">
+                  <p>
+                    04<br />暁<br />Akatsuki<br />血色感と湿度を感じるコーラルピンク。<br />チークカラーとしても。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/eyeshadow5.png" />
+                <div class="swiper-slide-inner">
+                  <p>
+                    05<br />木陰<br />Kokage<br />温かみのあるオレンジブラウン。<br />チークカラーとしても。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper END -->
+          <!-- 2個目のSwiper END -->
 
           <script>
             var SwiperSl = new Swiper(".sl", {
@@ -214,138 +266,87 @@
               },
             });
           </script>
-        </div>
-        <div class="eyeshadow3">
-          <div class="eyeshadow-box1 pc-block">
-            <div class="eyeshadow-box-inner box1">
-              <img
-                src="image/eyeshadow1.png"
-                alt="mebuki AINOKI"
-                class="box-eyeshadow-image box-image1"
-              />
-              <div class="box-inner">
-                <h3 class="box-title-num mincho">01</h3>
-                <h3 class="box-title-jp mincho">木漏れ日</h3>
-                <p class="box-title-en">Komorebi</p>
-                <p class="box-detail">
-                  まぶたにツヤと輝きを。<br />ベースカラーやハイライトにも。
-                </p>
-              </div>
-            </div>
-            <div class="eyeshadow-box-inner box2">
-              <img
-                src="image/eyeshadow2.png"
-                alt="mebuki AINOKI"
-                class="box-eyeshadow-image box-image2"
-              />
-              <div class="box-inner">
-                <h3 class="box-title-num mincho">02</h3>
-                <h3 class="box-title-jp mincho">朧月</h3>
-                <p class="box-title-en">Oboroduki</p>
-                <p class="box-detail">
-                  瞳、引き立つソフトイエロー。<br />マットな質感でアクセントにも。
-                </p>
-              </div>
-            </div>
-            <div class="eyeshadow-box-inner box3">
-              <img
-                src="image/eyeshadow3.png"
-                alt="mebuki AINOKI"
-                class="box-eyeshadow-image"
-              />
-              <div class="box-inner box3-inner">
-                <h3 class="box-title-num mincho">03</h3>
-                <h3 class="box-title-jp mincho">若草</h3>
-                <p class="box-title-en">Wakakusa</p>
-                <p class="box-detail">
-                  肌になじむくすみグリーン。<br />重ねづけで表情自在に。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="eyeshadow-box2 pc-block">
-            <div class="eyeshadow-box-inner box4">
-              <img
-                src="image/eyeshadow4.png"
-                alt="mebuki AINOKI"
-                class="box-eyeshadow-image"
-              />
-              <div class="box-inner box4-inner">
-                <h3 class="box-title-num mincho">04</h3>
-                <h3 class="box-title-jp mincho">暁</h3>
-                <p class="box-title-en">Akatsuki</p>
-                <p class="box-detail">
-                  血色感と湿度を感じるコーラルピンク。<br />チークカラーとしても。
-                </p>
-              </div>
-            </div>
-            <div class="eyeshadow-box-inner box5">
-              <img
-                src="image/eyeshadow5.png"
-                alt="mebuki AINOKI"
-                class="box-eyeshadow-image"
-              />
-              <div class="box-inner box5-inner">
-                <h3 class="box-title-num mincho">05</h3>
-                <h3 class="box-title-jp mincho">木陰</h3>
-                <p class="box-title-en">Kokage</p>
-                <p class="box-detail">
-                  温かみのあるオレンジブラウン。<br />チークカラーとしても。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-container sl sp-block">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="image/eyeshadow1.png" />
-                <div class="swiper-slide-inner">
-                  <p>
-                    01<br />木漏れ日<br />Komorebi<br />まぶたにツヤと輝きを。<br />ベースカラーやハイライトにも。
+
+          <div class="eyeshadow3 pc-block">
+            <div class="eyeshadow-box1 pc-block">
+              <div class="eyeshadow-box-inner box1">
+                <img
+                  src="image/eyeshadow1.png"
+                  alt="mebuki AINOKI"
+                  class="box-eyeshadow-image box-image1"
+                />
+                <div class="box-inner">
+                  <h3 class="box-title-num mincho">01</h3>
+                  <h3 class="box-title-jp mincho">木漏れ日</h3>
+                  <p class="box-title-en">Komorebi</p>
+                  <p class="box-detail">
+                    まぶたにツヤと輝きを。<br />ベースカラーやハイライトにも。
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="image/eyeshadow2.png" />
-                <div class="swiper-slide-inner">
-                <p>02<br />朧月<br />Oboroduki<br>瞳、引き立つソフトイエロー。<br />マットな質感でアクセントにも。</p> 
+              <div class="eyeshadow-box-inner box2">
+                <img
+                  src="image/eyeshadow2.png"
+                  alt="mebuki AINOKI"
+                  class="box-eyeshadow-image box-image2"
+                />
+                <div class="box-inner">
+                  <h3 class="box-title-num mincho">02</h3>
+                  <h3 class="box-title-jp mincho">朧月</h3>
+                  <p class="box-title-en">Oboroduki</p>
+                  <p class="box-detail">
+                    瞳、引き立つソフトイエロー。<br />マットな質感でアクセントにも。
+                  </p>
+                </div>
+              </div>
+              <div class="eyeshadow-box-inner box3">
+                <img
+                  src="image/eyeshadow3.png"
+                  alt="mebuki AINOKI"
+                  class="box-eyeshadow-image"
+                />
+                <div class="box-inner box3-inner">
+                  <h3 class="box-title-num mincho">03</h3>
+                  <h3 class="box-title-jp mincho">若草</h3>
+                  <p class="box-title-en">Wakakusa</p>
+                  <p class="box-detail">
+                    肌になじむくすみグリーン。<br />重ねづけで表情自在に。
+                  </p>
+                </div>
               </div>
             </div>
-              <div class="swiper-slide">
-                <img src="image/eyeshadow3.png" />
-                <div class="swiper-slide-inner">
-                <p>03<br>若草<br>Wakakusa<br>肌になじむくすみグリーン。<br />重ねづけで表情自在に。</p> 
+            <div class="eyeshadow-box2 pc-block">
+              <div class="eyeshadow-box-inner box4">
+                <img
+                  src="image/eyeshadow4.png"
+                  alt="mebuki AINOKI"
+                  class="box-eyeshadow-image"
+                />
+                <div class="box-inner box4-inner">
+                  <h3 class="box-title-num mincho">04</h3>
+                  <h3 class="box-title-jp mincho">暁</h3>
+                  <p class="box-title-en">Akatsuki</p>
+                  <p class="box-detail">
+                    血色感と湿度を感じるコーラルピンク。<br />チークカラーとしても。
+                  </p>
+                </div>
               </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="image/eyeshadow4.png" />
-                <div class="swiper-slide-inner">
-                <p>04<br>暁<br>Akatsuki<br>血色感と湿度を感じるコーラルピンク。<br />チークカラーとしても。</p> 
+              <div class="eyeshadow-box-inner box5">
+                <img
+                  src="image/eyeshadow5.png"
+                  alt="mebuki AINOKI"
+                  class="box-eyeshadow-image"
+                />
+                <div class="box-inner box5-inner">
+                  <h3 class="box-title-num mincho">05</h3>
+                  <h3 class="box-title-jp mincho">木陰</h3>
+                  <p class="box-title-en">Kokage</p>
+                  <p class="box-detail">
+                    温かみのあるオレンジブラウン。<br />チークカラーとしても。
+                  </p>
+                </div>
               </div>
             </div>
-              <div class="swiper-slide">
-                <img src="image/eyeshadow5.png" />
-                <div class="swiper-slide-inner">
-                <p>05<br>木陰<br>Kokage<br>温かみのあるオレンジブラウン。<br />チークカラーとしても。</p>
-              </div>
-            </div>
-          </div>
-            <div class="swiper-pagination"></div>
-          </div>
-            <script>
-              var SwiperSl = new Swiper(".sl", {
-                speed: 1000,
-
-                spaceBetween: "3%",
-                slidesPerView: "auto",
-                centeredSlides: true,
-
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-                },
-              });
-            </script>
           </div>
         </div>
         <div class="eyeshadow4">
