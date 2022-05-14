@@ -105,7 +105,7 @@
           </div>
           <div class="eyebalm1-inner-r">
             <h3 class="eyebalm1-inner-r-h3 mincho">
-              24時間目元ケアを叶える<br class="sec2-block" />アイバーム
+              24時間目元ケアを叶える<br class="sec2-block" />スティック状美容液
             </h3>
             <p class="title-en">AINOKI mebuki forest feel eye balm</p>
             <p class="title-jp">
@@ -235,7 +235,9 @@
                 <img src="image/eyeshadow4.png" />
                 <div class="swiper-slide-inner">
                   <p>
-                    04<br />暁<br />Akatsuki<br />血色感と湿度を感じるコーラルピンク。<br />チークカラーとしても。
+                    04<br />暁<br />Akatsuki<br />血色感と湿度を感じる<br
+                      class="sp-block"
+                    />コーラルピンク。<br />チークカラーとしても。
                   </p>
                 </div>
               </div>
@@ -243,7 +245,9 @@
                 <img src="image/eyeshadow5.png" />
                 <div class="swiper-slide-inner">
                   <p>
-                    05<br />木陰<br />Kokage<br />温かみのあるオレンジブラウン。<br />チークカラーとしても。
+                    05<br />木陰<br />Kokage<br />温かみのある<br
+                      class="sp-block"
+                    />オレンジブラウン。<br />チークカラーとしても。
                   </p>
                 </div>
               </div>
@@ -253,16 +257,39 @@
           <!-- 2個目のSwiper END -->
 
           <script>
-            var SwiperSl = new Swiper(".sl", {
-              speed: 1000,
+            var Swiper2 = new Swiper(".swiper2", {
+              speed: 800,
 
               spaceBetween: "3%",
               slidesPerView: "auto",
               centeredSlides: true,
+              mousewheel: true,
 
               pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+                mousewheel: true,
+              },
+
+              thumbs: {
+                swiper: Swiper1,
+              },
+            });
+            var Swiper1 = new Swiper(".swiper1", {
+              speed: 800,
+
+              spaceBetween: "3%",
+              slidesPerView: "auto",
+              centeredSlides: true,
+              mousewheel: true,
+
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+
+              thumbs: {
+                swiper: Swiper2,
               },
             });
           </script>
@@ -383,10 +410,14 @@
         class="section3-back"
       />
       <p class="sec3-p1">
-        私たちは、瞳にその人の個性や生き方までもが映し出されると考えています。<br />デジタルデバイスによるブルーライトやストレス、睡眠不足、過酷な環境で生きる現代の肌。<br />それに加え、マスク生活が当たり前の中、目元の印象は<br />ますます大切になってきています。
+        私たちは、瞳にその人の個性や生き方までもが映し出されると考えています。<br />デジタルデバイスによるブルーライトやストレス、睡眠不足、過酷な環境で生きる現代の肌。<br />それに加え、マスク生活が当たり前の中、<br
+          class="sp-block"
+        />目元の印象はますます大切になってきています。
       </p>
       <p class="sec3-p2">
-        そんなライフスタイルの変化に寄り添うために、目元目周りをケアしながら<br />美しくなれるコスメをつくりたいという想いで「AINOKI
+        そんなライフスタイルの変化に寄り添うために、<br
+          class="sp-block"
+        />目元目周りをケアしながら<br />美しくなれるコスメをつくりたいという想いで「AINOKI
         mebuki」は生まれました。
       </p>
     </div>
