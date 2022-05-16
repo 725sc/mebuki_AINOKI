@@ -139,16 +139,16 @@ img {
 a:hover {
   filter: alpha(opacity=50);
   zoom: 1;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .btn {
   letter-spacing: 0.08em;
   display: inline-block;
-  border: 1px solid #fff;
+  background: #fff;
+  color: #174040;
   border-radius: 50px;
-  color: #fff;
   padding: 10px 32px;
   margin: 0;
   transition: 0.3s;
@@ -156,8 +156,9 @@ a:hover {
 }
 
 .btn-buy:hover {
-  background: #fff;
-  color: #174040;
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
 }
 
 /*swiper*/
@@ -943,7 +944,7 @@ object-fit: cover;
 }
 
 .seibun-image {
-  width: 80vw;
+  width: 90vw;
 }
 
 /*section3*/
